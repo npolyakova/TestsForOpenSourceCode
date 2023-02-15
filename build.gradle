@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.14.2'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    implementation 'com.googlecode.objectify:objectify:6.0.9'
+    implementation 'org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016'
+    implementation 'org.apache.solr:solr-solrj:9.1.1'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'com.google.cloud:google-cloud-logging:3.14.3'
+    implementation 'com.sun.jersey:jersey-client:1.19.4'
+    implementation 'com.sun.jersey.contribs:jersey-multipart:1.19.4'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'com.google.cloud:google-cloud-tasks:2.10.0'
+    implementation 'org.json:json:20220924'
+    implementation 'com.mailjet:mailjet-client:5.2.2'
+    implementation 'org.jsoup:jsoup:1.15.3'
+    implementation 'com.sendgrid:sendgrid-java:4.9.3'
+    implementation 'com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:r156'
+    implementation 'org.eclipse.jetty:jetty-annotations:9.4.48.v20220622'
+    implementation 'org.eclipse.jetty:jetty-webapp:9.4.48.v20220622'
+    implementation 'org.eclipse.jetty:jetty-util:9.4.48.v20220622'
+}
+
+test {
+    useJUnitPlatform()
+}
